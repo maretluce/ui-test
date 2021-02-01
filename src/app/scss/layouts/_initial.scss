@@ -1,0 +1,35 @@
+.l-initial {
+	height: 100vh;
+	position: relative;
+	width: 100%;
+
+	img.img-ppal {
+		height: 100%;
+		object-fit: cover;
+		width: 100%;
+	}
+
+	.contenido {
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+
+		.c-box-ppal {		
+			width: 100%;
+
+			@include media-breakpoint-up(md) {
+				width: 50%;
+			}
+		}
+	}
+
+	.c-box-closing {
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		width: 100%;
+		z-index: 2;
+	}
+}

@@ -1,0 +1,45 @@
+.l-banner {
+    background-color: $grey-light;
+    padding: 20px;
+
+    @include media-breakpoint-up(md) {
+        padding: 20px 50px 20px 20px;
+    }
+
+    p {
+        width: 100%;
+
+        @include media-breakpoint-up(md) {
+            width: 70%;
+        }
+    }
+
+    .titles {
+        margin-bottom: 20px;
+        text-align: center;
+        width: 100%;
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: 0;
+            width: 30%;
+        }
+    }
+}
+
+.l-submit-name {    
+    position: relative;
+    width: 100%;
+
+    img {
+        width: 100%;
+    }
+
+    .text {
+        height: 100%;
+        left: 0;
+        padding: 10px 35px;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+}

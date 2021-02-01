@@ -1,0 +1,34 @@
+.txt {
+	&-blanco {
+		color: $blanco;
+	}
+	&-negro {
+		color: $negro;
+	}
+	&-azul {
+		color: $azul;
+	}
+}
+
+.bg {
+	&-negro {
+		background-color: $negro;
+	}
+	&-blanco {
+		background-color: $blanco;
+	}
+}
+
+@media only screen and (min-width: 400px) and (max-width: 768px) {
+	
+	.d-sm2-block {
+		display: block !important;
+	}
+}
+
+@media (min-width: 400px) {
+
+	.d-sm2-none {
+		display: none !important;
+	}
+}

@@ -3,9 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
+/* components */
+
+import { VotingboxComponent } from './components/votingbox/votingbox.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    VotingboxComponent
   ],
   imports: [
     BrowserModule
@@ -13,4 +18,5 @@ import { AppComponent } from './app.component';
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

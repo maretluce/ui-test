@@ -1,0 +1,12 @@
+.bg {
+    &-blue {
+        background-color: $blue;
+    }
+    &-orange {
+        background-color: $orange;
+    }
+}
+
+.i-dislike {
+    transform: scaleX(-1);
+}

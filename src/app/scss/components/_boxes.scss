@@ -1,0 +1,140 @@
+.c-logo {
+	color: $white;
+	font-family: $fontppal !important;
+	font-size: 2rem;
+	font-weight: 400;
+	line-height: 1;
+
+	@include media-breakpoint-up(md) {
+		font-size: 2rem;
+	}
+}
+
+.c-linkwiki {
+
+	img {
+		display: inline-block;
+		margin-right: 10px;
+		width: 25px;	
+	}
+
+	a {
+		color: $white;
+		text-decoration: underline;
+	}
+}
+
+.c-results {
+
+	.bar {
+		padding: 12px 20px;
+
+		svg {			
+			fill: $white;
+			margin: 0 10px;
+		}
+		h4 {
+			color: $white;
+		}
+	}
+
+	.like {
+		background-color: $result-blue;		
+	}
+
+	.dislike{
+		background-color: $result-orange;
+	}
+}
+
+.c-box-ppal {
+	color: $white;	
+
+	.text {
+		background-color: $bg-black;
+		backdrop-filter: blur(20px);
+		padding: 35px;
+	}
+
+	.buttons {
+		.btn-base {
+			width: 50%;
+		}
+	}
+}
+
+.c-box-closing {
+
+	.title {
+		background-color: $bg-grey;
+		padding: 14px 10px;
+		position: relative;
+		text-align: right;
+		width: 40%;
+
+		&:before {
+			content: "";
+			border-top: 12px solid transparent;
+			border-bottom: 12px solid transparent;			
+			border-left: 12px solid $bg-grey;
+			height: 0;
+			position: absolute;
+			right: -12px;
+    		top: calc(50% - 10px);
+			width: 0; 			 
+		}
+
+		p {
+			color: $white;
+		}
+	} 
+
+	.days {
+		background-color: $bg-white;
+		padding: 4px 25px;
+		width: 60%;
+
+		h5 {
+			font-size: 2rem;
+			color: $grey;
+
+			@include media-breakpoint-up(md) {
+				font-size: 2.25rem;
+			}
+		}
+	}
+}
+
+.c-box-vote {
+	margin-bottom: 40px;
+	position: relative;
+
+	img {
+		width: 100%;
+	}
+
+	.content {
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		width: 100%;
+
+		.description {
+			color: $white;
+			padding: 0 60px;
+			position: relative;
+
+			.status {
+				left: 0;
+				padding: 4px 6px 8px;
+				padding: 12px 13px;
+				position: absolute;
+				top: 9px;	
+				
+				svg {
+					fill: $white;
+				}
+			}
+		}
+	}
+}
