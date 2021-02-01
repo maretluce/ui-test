@@ -29,10 +29,16 @@
 	.bar {
 		padding: 12px 20px;
 
-		svg {			
+		svg {
+			display: none;
 			fill: $white;
 			margin: 0 10px;
+
+			@include media-breakpoint-up(md) {
+				display: block;
+			}			
 		}
+
 		h4 {
 			color: $white;
 		}

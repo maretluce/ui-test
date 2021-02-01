@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./scss/app.component.scss']
 })
+
 export class AppComponent {
   title = 'ui-test';
 }

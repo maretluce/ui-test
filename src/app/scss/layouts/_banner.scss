@@ -26,20 +26,39 @@
     }
 }
 
-.l-submit-name {    
+.l-submit-name {
+    height: 150px;    
     position: relative;
     width: 100%;
 
+    @include media-breakpoint-up(md) {
+        height: 90px; 
+    }
+
+    h4 {
+        text-align: center;
+
+        @include media-breakpoint-up(md) {
+            text-align: left;
+        }
+    }
+
     img {
         width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     .text {
         height: 100%;
-        left: 0;
-        padding: 10px 35px;
+        left: 0;         
+        padding: 20px 35px;       
         position: absolute;
         top: 0;
         width: 100%;
+
+        @include media-breakpoint-up(md) {
+            padding: 10px 35px;  
+        }
     }
 }
