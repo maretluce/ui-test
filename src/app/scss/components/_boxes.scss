@@ -24,53 +24,6 @@
 	}
 }
 
-.c-results {
-
-	.bar {
-		height: 50px;
-		position: relative;
-		
-		.data {
-			padding: 12px 20px;	
-			position: absolute;
-
-			svg {
-				display: none;
-				fill: $white;
-				margin: 0 10px;
-	
-				@include media-breakpoint-up(md) {
-					display: block;
-				}			
-			}
-	
-			h4 {
-				color: $white;
-			}
-		}
-
-		&:nth-child(1) {
-			.data {
-				left: 0;
-			}
-		}
-
-		&:nth-child(2) {
-			.data {
-				right: 0;
-			}
-		}
-	}
-
-	.like {
-		background-color: $result-blue;		
-	}
-
-	.dislike{
-		background-color: $result-orange;
-	}
-}
-
 .c-box-ppal {
 	color: $white;	
 
@@ -150,35 +103,3 @@
 	}
 }
 
-.c-status {
-	left: 0;
-	padding: 12px 13px;
-	position: absolute;
-	top: 9px;	
-	
-	svg {
-		fill: $white;
-	}
-}
-
-.c-voting {
-	color: $white;
-	padding: 0 60px;
-
-	.buttons {
-		display: none;
-
-		&.show {
-			display: block;
-		}
-	}
-
-	.vote-again {
-		display: none;
-
-		&.show {
-			display: block;
-		}
-	}
-	
-}
