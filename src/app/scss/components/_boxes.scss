@@ -27,20 +27,38 @@
 .c-results {
 
 	.bar {
-		padding: 12px 20px;
+		height: 50px;
+		position: relative;
+		
+		.data {
+			padding: 12px 20px;	
+			position: absolute;
 
-		svg {
-			display: none;
-			fill: $white;
-			margin: 0 10px;
-
-			@include media-breakpoint-up(md) {
-				display: block;
-			}			
+			svg {
+				display: none;
+				fill: $white;
+				margin: 0 10px;
+	
+				@include media-breakpoint-up(md) {
+					display: block;
+				}			
+			}
+	
+			h4 {
+				color: $white;
+			}
 		}
 
-		h4 {
-			color: $white;
+		&:nth-child(1) {
+			.data {
+				left: 0;
+			}
+		}
+
+		&:nth-child(2) {
+			.data {
+				right: 0;
+			}
 		}
 	}
 
@@ -140,6 +158,26 @@
 				svg {
 					fill: $white;
 				}
+			}
+
+			.voting {
+
+				.buttons {
+					display: none;
+
+					&.show {
+						display: block;
+					}
+				}
+
+				.vote-again {
+					display: none;
+
+					&.show {
+						display: block;
+					}
+				}
+				
 			}
 		}
 	}

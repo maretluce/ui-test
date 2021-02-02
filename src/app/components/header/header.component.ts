@@ -7,30 +7,24 @@ import { Component, OnInit, DoCheck } from '@angular/core';
 })
 export class HeaderComponent implements OnInit, DoCheck {
 
-  constructor() { 
+  public statusMenu: boolean;  
 
+  constructor() {
+    this.statusMenu = false;
   }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
-  ngDoCheck(){
-    console.log('DoCheck ejecutado');
-  }
+  ngDoCheck(){ }
 
-  /*hamburguesa*/
-  menuMobile(obj) {
-    obj.className += ' open';
-    document.querySelector('#menuPpal').className += ' show';
+  /*burger*/
+  
+  menuMobile() {
+    this.statusMenu = !this.statusMenu;
+
+    //obj.className += ' open';
+    //document.querySelector('#menuPpal').className += ' show';
     //obj.target.attributes.id.value;
     //this.titulo = "Nuevo titulo";
   }
-
-  /*hamburguesa*/
-  /*$('#burger').on('click', function(){
-    $(this).toggleClass('open');
-    $('#menuPpal').toggleClass('show');
-  });*/
-
-
 }

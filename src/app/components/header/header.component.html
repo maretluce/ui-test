@@ -10,12 +10,12 @@
         <!-- menu -->
         <section class="l-menu">
           <!-- burger -->
-          <button id="burger" role="button" class="btn-burger" (click)="menuMobile($event)">
+          <button id="burger" role="button" class="btn-burger" (click)="menuMobile()" [ngClass]="statusMenu ? ' open' : ' '">
             <span></span>
             <span class="large"></span>
             <span></span>
           </button>
-          <nav id="menuPpal" class="menu-ppal">
+          <nav id="menuPpal" class="menu-ppal" [ngClass]="statusMenu ? ' show' : ' '">
             <div class="contenido-menu d-flex flex-column justify-content-around align-items-top h-100">
               <ul class="d-flex flex-column flex-md-row justify-content-md-between">
                 <li>
