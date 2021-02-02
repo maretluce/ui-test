@@ -53,11 +53,38 @@
 
 .btn-big {
 	padding: 15px 25px;
+
+	svg {
+		transform: scale(1);
+		transform-origin: center;
+		transition: all ease 0.2s;
+	}
+
+	&:hover {
+		svg {
+			transform: scale(1.4);
+		}
+	}
 }
 
 .btn-small {
+	border: 2px solid transparent !important;
 	margin-right: 15px;
 	padding: 12px 13px;
+
+	svg {
+		transform: scale(1);
+		transform-origin: center;
+		transition: all ease 0.2s;
+	}
+
+	&:hover {
+		border: 2px solid $white !important;
+
+		svg {
+			transform: scale(1.2);
+		}
+	}
 }
 
 .btn-blue {
@@ -73,10 +100,18 @@
 	border: 1px solid $white !important;
 	color: $white;
 	padding: 4px 24px 6px;
+
+	&:hover {
+		background-color: $bg-black !important;
+	}
 }
 
 .btn-border-black {
 	border: 1px solid $black !important;
 	color: $black;
 	padding: 4px 24px 6px;
+
+	&:hover {
+		background-color: $bg-black2 !important;
+	}
 }

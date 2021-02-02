@@ -63,23 +63,37 @@
 				@include media-breakpoint-up(md) {
 					text-align: center;
 				}
-				
-				&.active {
-					&:after {
-						background-color: $orange;
-						transform: translate(10px, 10px);
-					}
-				}
 
 				a {
 					color: $white;
 					display: inline-block;
 					padding: 20px 0;
+					position: relative;
 					width: 100%;
 					text-align: center;				
 
 					@include media-breakpoint-up(md) {
 						padding: 25px 15px;
+					}
+
+					&:before {
+						background-color: $white;
+						bottom: 22px;
+						content: "";
+						left: 10%;
+						height: 2px;
+						position: absolute;
+						transform: scaleX(0);
+						transform-origin: center;
+						transition: all ease 0.2s;
+						width: 80%;
+						z-index: -1;
+					}
+
+					&:hover {
+						&:before {
+							transform: scaleX(1);
+						}
 					}
 				}			
 
@@ -87,6 +101,27 @@
 					a {
 						svg {
 							fill: $white;
+						}
+
+						&:before {
+							background-color: $bg-white2;
+							bottom: 14px;
+							border-radius: 50%;
+							content: "";
+							left: 5px;
+							height: 46px;
+							position: absolute;
+							transform: scale(0);
+							transform-origin: center;
+							transition: all ease 0.2s;
+							width: 46px;
+							z-index: -1;
+						}
+
+						&:hover {
+							&:before {
+								transform: scale(1);
+							}
 						}
 					}
 				}

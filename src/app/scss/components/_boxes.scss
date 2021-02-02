@@ -15,12 +15,37 @@
 	img {
 		display: inline-block;
 		margin-right: 10px;
+		vertical-align: middle;
 		width: 25px;	
 	}
 
 	a {
 		color: $white;
-		text-decoration: underline;
+		position: relative;
+		vertical-align: middle;
+
+		&:before {
+			background-color: $white;
+			bottom: -4px;
+			content: "";
+			right: 0;
+			height: 2px;
+			position: absolute;
+			transform: scaleY(1) scaleX(1);
+			transform-origin: right;
+			transition: all ease 0.2s;
+			width: 100%;
+			z-index: -1;
+		}
+
+		&:hover {
+			&:before {
+				background-color: $bg-white2;
+				bottom: 7px;
+				left: 8px;
+				transform: scaleY(15) scaleX(1.43);			
+			}
+		}
 	}
 }
 

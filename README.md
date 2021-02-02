@@ -1,5 +1,10 @@
 # UiTest
 
+This exercise was done in the angular framework.
+
+The structure consists of a home component and a "blank page" component (the two templates that exist on the site), and the other components are dedicated to the voting boxes, where all the interactivity of the landing would be centered.
+
+There was a specific point that I could not develop due to the lack of time and that point was to keep the votes even after refreshing the page, that I would have solved it using the localstorage.
 
 ## Angular documentation
 
