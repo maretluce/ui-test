@@ -17,14 +17,8 @@ export class HeaderComponent implements OnInit, DoCheck {
 
   ngDoCheck(){ }
 
-  /*burger*/
-  
+  /*burger*/  
   menuMobile() {
     this.statusMenu = !this.statusMenu;
-
-    //obj.className += ' open';
-    //document.querySelector('#menuPpal').className += ' show';
-    //obj.target.attributes.id.value;
-    //this.titulo = "Nuevo titulo";
   }
 }

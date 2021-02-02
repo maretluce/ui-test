@@ -19,6 +19,7 @@ export class VotingboxComponent implements OnInit, DoCheck {
   public percentageDislike: number;
   public bgpercentageLike: number;
   public bgpercentageDislike: number;
+  public statusVoting: boolean; 
 
   constructor() {
     this.votesLike = 0;
@@ -28,6 +29,7 @@ export class VotingboxComponent implements OnInit, DoCheck {
     this.percentageDislike= 0;
     this.bgpercentageLike= 50;
     this.bgpercentageDislike= 50;
+    this.statusVoting = false;
   }
 
   ngOnInit(): void { }
@@ -36,7 +38,6 @@ export class VotingboxComponent implements OnInit, DoCheck {
 
   /**/
   addVote(choice) {
-    console.log(choice);
     if(choice == 'like') this.votesLike += 1;
     if(choice == 'dislike') this.votesDislike += 1;
     this.votesTotal += 1;
@@ -44,7 +45,12 @@ export class VotingboxComponent implements OnInit, DoCheck {
     /*percentage value*/
     this.bgpercentageLike = this.percentageLike = this.votesLike * 100 / this.votesTotal;
     this.bgpercentageDislike = this.percentageDislike = this.votesDislike * 100 / this.votesTotal;
+   
+  }
 
+  boxVoting() {
+    this.statusVoting = !this.statusVoting;
+    console.log('again'+this.statusVoting);
   }
 
 }
