@@ -1,10 +1,14 @@
 import { Component, OnInit, DoCheck } from '@angular/core';
 
+// JSON file
+import listCharacters from './../../../assets/json/bd.json';
+
 @Component({
   selector: 'app-votingbox',
   templateUrl: './votingbox.component.html',
   styleUrls: ['./../../scss/app.component.scss']
 })
+
 export class VotingboxComponent implements OnInit, DoCheck {
 
   public choice: string;

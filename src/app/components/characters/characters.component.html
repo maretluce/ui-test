@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="col-12 col-md-6" *ngFor="let character of characters">
+        <div class="c-box-vote">
+            <!-- image -->
+            <img src="assets/images/{{character.image}}" alt="Kanye West" class="img-ppal">
+            <!-- content -->
+            <div class="content">
+                <!-- description -->
+                <div class="description">                          
+                    <h3>{{character.name}}</h3>
+                    <h6><small><strong>{{character.time}}</strong> in {{character.industry}}</small></h6>
+                    <p class="my-4">{{character.description}}</p>                    
+                </div>
+                <!-- votes -->
+                <app-votingbox></app-votingbox>
+            </div>            
+        </div>
+    </div>
+</div>
